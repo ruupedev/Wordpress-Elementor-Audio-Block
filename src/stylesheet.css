@@ -1,0 +1,39 @@
+/* Align the play/pause button vertically and horizontally within the 50px height */
+.audio-player-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Allocate fixed width for the button container */
+.waveform-play-pause-container {
+    width: 40px; /* Adjust as needed */
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    display: flex;
+}
+
+/* Play/Pause button */
+.waveform-play-pause {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    /* Keep the button size consistent */
+    width: 100%;
+    height: 100%;
+}
+
+/* Waveform container */
+.waveform-container {
+    flex-grow: 1; /* Allows the waveform to fill the remaining space */
+    margin-left: 0px; /* Optional: Adds some space between the button and the waveform */
+}
+
+.waveform-play-pause:hover {
+    background-color: transparent !important; /* Removes background color on hover */
+}
+
+/* Just in case you also want to remove the outline that sometimes appears on focus */
+.waveform-play-pause:focus {
+    outline: none !important; 
+}
